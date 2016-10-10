@@ -9,7 +9,7 @@ def login():
     error = None
     if request.method == 'POST':
         if valid_login(request.form['username'], request.form['password']):
-            flash("Succesfully logged in")
+            flash("Succesfully logged in!")
             return redirect(url_for('welcome',username=request.form.get('username')))
         else:
             error = 'Incorrect username and password'
