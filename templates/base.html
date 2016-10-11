@@ -10,7 +10,9 @@
 
 <body>
 
-    <h1>The Acme Co.</h1>
+      <div id="logo">
+          <img src ="{{ url_for('static', filename='acme_logo.jpg')}}" alt="Acme Corp." height="150px"/>
+      </div>
 
     {% with messages = get_flashed_messages() %} {%if messages %}
     <ul class="flashes">
